@@ -1,0 +1,30 @@
+<form action="" #productform="ngForm" (ngSubmit)="save()">
+    <div>
+        <label for="" class="form-group">Pid</label>
+    </div>
+    <div>
+        <input type="text" required #pid="ngModel" class="form-control" minlength="2" maxlength="5" [(ngModel)]="product.pid" name="pid">
+
+        <div class="alert alert-danger"  *ngIf="pid.touched && pid.invalid">
+            pid field is required......
+        </div>
+
+    </div>
+    <div>
+        <label for="" class="form-group">Name</label>
+    </div>
+    <div>
+        <input type="text" class="form-control" [(ngModel)]="product.name" name="name" required>
+    </div>
+    <div>
+        <label for="" class="form-group">Price</label>
+    </div>
+    <div>
+        <input type="text" class="form-control" [(ngModel)]="product.price" name="price" required>
+    </div>
+    <button class="btn btn-primary" [disabled]='productform.invalid'>Save</button>
+</form>
+<div [hidden]="!productform.invalid">
+    Plz recheck your form
+</div>
+{{productform.status}}

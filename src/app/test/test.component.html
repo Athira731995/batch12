@@ -1,0 +1,22 @@
+<p>test works!</p>
+<p>This is a sample Application</p>
+<!--Angular Expression,pull-->
+<p>My name is {{name}}</p>
+<div *ngFor="let i of num_arry">
+    {{i}}
+
+</div>
+<select>
+    <option *ngFor="let state of states">{{state}}</option>
+
+ </select>   
+<p [ngStyle]="{'color':'red'}">Welcome</p>
+<p [ngStyle]="mystyle">Expertzlab</p>
+<p [ngClass]="['blueactive']">Expertzlab Technologies Pvt Ltd</p>
+<p [ngClass]="condition=='true'?'blueactive':'bluedisabled'">Expertzlab Technologies Pvt Ltd</p>
+<select name="" id="">
+    <option value="">red</option>
+    <option value="">blue</option>
+    <option value="">yellow</option>
+</select>
+<p>Good afternoon</p>

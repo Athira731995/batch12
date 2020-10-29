@@ -1,0 +1,44 @@
+<form action="" [formGroup]="studentForm" (ngSubmit)="save()">
+    <div>
+        <label for="" class="form-group">Name</label>
+    </div>
+    <div>
+        <input type="text"  class="form-control" formControlName="name"  name="name">     
+    </div>
+    <div>
+        <label for="" class="form-group">Email</label>
+    </div>
+    <div>
+        <input type="text" class="form-control" formControlName="email" name="Email" >
+    </div>
+    <div>
+        <label for="" class="form-group">Password</label>
+    </div>
+    <div>
+        <input type="text" class="form-control"  formControlName="password"  name="Password">
+    </div>
+    <div formGroupName="address">
+        <div>
+            <label for="" class="form-group">City</label>
+        </div>
+        <div>
+            <input type="text" class="form-control"  formControlName="city"  name="city">
+        </div>
+        <div>
+            <label for="" class="form-group">State</label>
+        </div>
+        <div>
+            <input type="text" class="form-control"  formControlName="state"  name="state">
+        </div>
+        <div>
+            <label for="" class="form-group">Pincode</label>
+        </div>
+        <div>
+            <input type="text" class="form-control"  formControlName="pin"  name="pasword">
+        </div>
+
+
+    </div>
+    <button class="btn btn-primary">Save</button>
+    <button class="btn btn-primary" (click)="onreset()">Reset</button>
+</form>

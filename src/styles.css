@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/bootstrap/dist/css/bootstrap-grid.css";
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+.blueactive{
+   color:blue;
+    font-weight: bold;
+    font-size:20px;
+}
+.bluedisabled{
+    color:grey;
+    font-size: 20px;
+}
